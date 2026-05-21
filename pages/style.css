@@ -1,0 +1,667 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-page{
+    background-color: #4b4960;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page .login-container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.login-page .icon-user{
+    font-size: 320px;
+    color: #d8c8ff;
+}
+
+.login-page .login-box{
+    color: white;
+}
+
+.login-page .login-box h5{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.login-page .form-label{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-page .form-control{
+    border-radius: 30px;
+    border: none;
+    background-color: #d8c8ff;
+    height: 38px;
+}
+
+.login-page .form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+
+.login-page .btn-login{
+    background-color: #d8c8ff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    color: #4b4960;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-page .links a,
+.login-page .forgot-password a{
+    color: #d8c8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-page .forgot-password{
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* =========================
+   CADASTRO
+========================= */
+
+.register-page{
+    background-color: #4b4960;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-page .container{
+    max-width: 700px;
+}
+
+.register-page .top-area{
+    margin-bottom: 10px;
+}
+
+.register-page .icon-area i{
+    font-size: 110px;
+    color: #d8c8ff;
+}
+
+.register-page .title-area{
+    margin-left: 20px;
+}
+
+.register-page .title-area h3{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.register-page .register-box{
+    background-color: #3e3b52;
+    padding: 50px;
+    border-radius: 35px;
+}
+
+.register-page .form-label{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.register-page .form-control{
+    background-color: #d8c8ff;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.register-page .form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+
+.register-page .btn-register{
+    background-color: #d8c8ff;
+    color: #3e3b52;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 768px){
+
+    .login-page .icon-user{
+        font-size: 180px;
+        margin-bottom: 30px;
+    }
+
+    .login-page .login-box{
+        text-align: center;
+    }
+
+    .register-page .top-area{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .register-page .title-area{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .register-page .register-box{
+        padding: 30px;
+    }
+
+}
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page{
+    background-color: #4b4960;
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.dashboard-page .navbar-custom{
+    background-color: #d8c8ff;
+    padding: 12px 0;
+}
+
+.dashboard-page .navbar-nav{
+    gap: 30px;
+}
+
+.dashboard-page .nav-link{
+    color: #3e3b52;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard-page .nav-link:hover{
+    color: #2c293b;
+}
+
+/* Sidebar */
+
+.dashboard-page .sidebar{
+    padding-top: 70px;
+    padding-left: 70px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Botões */
+
+.dashboard-page .menu-btn{
+    background-color: #d8c8ff;
+    color: #3e3b52;
+    border: none;
+
+    width: 250px;
+    height: 55px;
+
+    border-radius: 30px;
+
+    font-size: 24px;
+}
+
+.dashboard-page .menu-btn:hover{
+    background-color: #c9b4ff;
+}
+
+/* Área principal */
+
+.dashboard-page .main-content{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.dashboard-page .main-content h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.dashboard-page .main-content p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Caixa da imagem */
+
+.dashboard-page .image-box{
+    background-color: #3e3b52;
+
+    width: 500px;
+    height: 420px;
+
+    margin: auto;
+
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-page .image-box img{
+    width: 280px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 768px){
+
+    .dashboard-page .sidebar{
+        align-items: center;
+        padding-left: 0;
+        gap: 30px;
+    }
+
+    .dashboard-page .main-content{
+        padding-top: 40px;
+    }
+
+    .dashboard-page .main-content h1{
+        font-size: 30px;
+    }
+
+    .dashboard-page .main-content p{
+        font-size: 18px;
+    }
+
+    .dashboard-page .image-box{
+        width: 90%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .dashboard-page .image-box img{
+        width: 200px;
+    }
+
+    .dashboard-page .menu-btn{
+        width: 220px;
+        font-size: 18px;
+    }
+
+    .dashboard-page .nav-link{
+        font-size: 18px;
+    }
+}
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   CADASTRO DE PRODUTO
+========================= */
+
+.product-page{
+    background-color: #4b4960;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Área principal */
+
+.product-page .product-content{
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Título */
+
+.product-page h2{
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-bottom: 50px;
+}
+
+/* Caixa */
+
+.product-page .product-box{
+    background-color: #3e3b52;
+
+    padding: 60px;
+
+    border-radius: 35px;
+}
+
+/* Labels */
+
+.product-page .form-label{
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+
+.product-page .form-control{
+    background-color: #d8c8ff;
+
+    border: none;
+    border-radius: 30px;
+
+    height: 45px;
+}
+
+.product-page .form-control:focus{
+    box-shadow: none;
+    border: none;
+    background-color: #d8c8ff;
+}
+
+/* Botão */
+
+.product-page .btn-product{
+    background-color: #d8c8ff;
+
+    color: #3e3b52;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 10px 25px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-page .btn-product:hover{
+    background-color: #c9b4ff;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media(max-width: 768px){
+
+    .product-page .product-box{
+        padding: 30px;
+    }
+
+    .product-page h2{
+        font-size: 24px;
+    }
+
+    .product-page .btn-product{
+        font-size: 18px;
+    }
+
+}
+
+/* ============================================================
+   CONFIGURAÇÕES GERAIS E RESETS
+   ============================================================ */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4b4960; /* Cor de fundo padrão do projeto */
+}
+
+/* Helper para links que parecem botões */
+.btn-custom-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ============================================================
+   LOGIN PAGE
+   ============================================================ */
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page .login-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.login-page .icon-user {
+    font-size: 320px;
+    color: #d8c8ff;
+}
+
+.login-page .login-box {
+    color: white;
+}
+
+.login-page .login-box h5 {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.login-page .form-label {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-page .form-control {
+    border-radius: 30px;
+    border: none;
+    background-color: #d8c8ff;
+    height: 38px;
+}
+
+.login-page .form-control:focus {
+    box-shadow: none;
+    border: none;
+    background-color: #cec1f7;
+}
+
+.login-page .btn-login {
+    background-color: #d8c8ff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    color: #4b4960;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login-page .links a,
+.login-page .forgot-password a {
+    color: #d8c8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ============================================================
+   CADASTRO DE CLIENTE (Baseado na Imagem Enviada)
+   ============================================================ */
+.client-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.client-page h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.client-page .client-box {
+    background-color: #3e3b52;
+    padding: 50px 80px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.client-page .form-label {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.client-page .form-control {
+    background-color: #d8c8ff;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.client-page .btn-client {
+    background-color: #d8c8ff;
+    color: #3e3b52;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.client-page .btn-client:hover {
+    background-color: #c9b4ff;
+    color: #2c293b;
+}
+
+/* ============================================================
+   DASHBOARD
+   ============================================================ */
+.dashboard-page .navbar-custom {
+    background-color: #d8c8ff;
+    padding: 12px 0;
+}
+
+.dashboard-page .nav-link {
+    color: #3e3b52;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashboard-page .sidebar {
+    padding: 70px 0 0 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.dashboard-page .menu-btn {
+    background-color: #d8c8ff;
+    color: #3e3b52;
+    width: 250px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 24px;
+    border: none;
+}
+
+.dashboard-page .image-box {
+    background-color: #3e3b52;
+    width: 100%;
+    max-width: 500px;
+    height: 420px;
+    margin: auto;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================================================
+   RESPONSIVIDADE (Geral)
+   ============================================================ */
+@media(max-width: 768px){
+    /* Login */
+    .login-page .icon-user { font-size: 150px; }
+    
+    /* Cadastro Cliente */
+    .client-page .client-box { padding: 30px; }
+    
+    /* Dashboard */
+    .dashboard-page .sidebar {
+        padding-left: 0;
+        align-items: center;
+        gap: 20px;
+    }
+    .dashboard-page .image-box {
+        width: 90%;
+        height: 300px;
+    }
+    .dashboard-page .main-content h1 { font-size: 28px; }
+}
