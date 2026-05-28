@@ -665,3 +665,286 @@ body {
     }
     .dashboard-page .main-content h1 { font-size: 28px; }
 }
+
+/* ===================================================
+   EQUIPE
+=================================================== */
+
+.team-page{
+    background-color: #4b4960;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-container{
+    width: 100%;
+    max-width: 700px;
+}
+
+.team-title{
+    color: white;
+
+    text-align: center;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 60px;
+}
+
+.team-box{
+    background-color: #3e3b52;
+
+    border-radius: 40px;
+
+    padding: 60px;
+}
+
+.team-label{
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.team-input{
+    background-color: #d8c8ff !important;
+
+    border: none !important;
+
+    border-radius: 40px !important;
+
+    height: 55px;
+}
+
+.team-input:focus{
+    box-shadow: none !important;
+}
+
+.team-btn{
+    background-color: #d8c8ff;
+
+    color: #3e3b52;
+
+    border: none;
+
+    border-radius: 40px;
+
+    padding: 12px 40px;
+
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.team-btn:hover{
+    background-color: #c9b4ff;
+}
+
+/* ===================================================
+   VENDEDOR
+=================================================== */
+
+.seller-page{
+    background-color: #4b4960;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seller-container{
+    width: 100%;
+    max-width: 700px;
+}
+
+.seller-title{
+    color: white;
+
+    text-align: center;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 60px;
+}
+
+.seller-box{
+    background-color: #3e3b52;
+
+    border-radius: 40px;
+
+    padding: 60px;
+}
+
+.seller-label{
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.seller-input{
+    background-color: #d8c8ff !important;
+
+    border: none !important;
+
+    border-radius: 40px !important;
+
+    height: 55px;
+}
+
+.seller-input:focus{
+    box-shadow: none !important;
+}
+
+.seller-btn{
+    background-color: #d8c8ff;
+
+    color: #3e3b52;
+
+    border: none;
+
+    border-radius: 40px;
+
+    padding: 12px 40px;
+
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.seller-btn:hover{
+    background-color: #c9b4ff;
+}
+
+/* ===================================================
+   VENDA
+=================================================== */
+
+.sale-page{
+    background-color: #4b4960;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-container{
+    width: 100%;
+    max-width: 1100px;
+}
+
+.sale-title{
+    color: white;
+
+    text-align: center;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 60px;
+}
+
+.sale-box{
+    background-color: #3e3b52;
+
+    border-radius: 40px;
+
+    padding: 60px;
+}
+
+.sale-label{
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.sale-input{
+    background-color: #d8c8ff !important;
+
+    border: none !important;
+
+    border-radius: 40px !important;
+
+    height: 55px;
+}
+
+.sale-input:focus{
+    box-shadow: none !important;
+}
+
+.sale-btn{
+    background-color: #d8c8ff;
+
+    color: #3e3b52;
+
+    border: none;
+
+    border-radius: 40px;
+
+    padding: 12px 40px;
+
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sale-btn:hover{
+    background-color: #c9b4ff;
+}
+
+/* ===================================================
+   RESPONSIVIDADE
+=================================================== */
+
+@media(max-width: 768px){
+
+    .team-box,
+    .seller-box,
+    .sale-box{
+        padding: 30px;
+    }
+
+    .team-title,
+    .seller-title,
+    .sale-title{
+        font-size: 28px;
+    }
+
+    .team-btn,
+    .seller-btn,
+    .sale-btn{
+        font-size: 18px;
+    }
+}
