@@ -12,7 +12,7 @@
 
 <body class="team-page">
 
-    <div class="team-container">
+    <div class="container team-container text-center">
 
         <h1 class="team-title">
             Insira os dados da equipe
@@ -20,7 +20,7 @@
 
         <div class="team-box">
 
-            <form>
+            <form action="php/cadastrar_equipe.php" method="POST">
 
                 <div class="mb-4">
 
@@ -28,7 +28,12 @@
                         Nome da equipe
                     </label>
 
-                    <input type="text" class="form-control team-input">
+                    <input 
+                        type="text" 
+                        class="form-control team-input"
+                        name="nomeEquipe"
+                        required
+                    >
 
                 </div>
 
@@ -38,15 +43,20 @@
                         Região da equipe
                     </label>
 
-                    <input type="text" class="form-control team-input">
+                    <input 
+                        type="text" 
+                        class="form-control team-input"
+                        name="regiaoEquipe"
+                        required
+                    >
 
                 </div>
 
                 <div class="text-center">
 
-                    <a href="home.html" class="btn team-btn">
+                    <button type="submit" class="btn team-btn">
                         Cadastrar equipe
-                    </a>
+                    </button>
 
                 </div>
 

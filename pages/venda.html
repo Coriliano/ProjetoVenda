@@ -12,7 +12,7 @@
 
 <body class="sale-page">
 
-    <div class="sale-container">
+    <div class="container sale-container text-center">
 
         <h1 class="sale-title">
             Insira os dados da venda
@@ -20,7 +20,7 @@
 
         <div class="sale-box">
 
-            <form>
+            <form action="php/cadastrar_venda.php" method="POST">
 
                 <div class="row">
 
@@ -30,7 +30,12 @@
                             Data da venda
                         </label>
 
-                        <input type="date" class="form-control sale-input">
+                        <input 
+                            type="date" 
+                            class="form-control sale-input"
+                            name="dataVenda"
+                            required
+                        >
 
                     </div>
 
@@ -40,7 +45,12 @@
                             Quantidade vendida
                         </label>
 
-                        <input type="number" class="form-control sale-input">
+                        <input 
+                            type="number" 
+                            class="form-control sale-input"
+                            name="quantidadeVenda"
+                            required
+                        >
 
                     </div>
 
@@ -50,7 +60,12 @@
                             Valor da venda
                         </label>
 
-                        <input type="number" class="form-control sale-input">
+                        <input 
+                            type="number" 
+                            class="form-control sale-input"
+                            name="valorVenda"
+                            required
+                        >
 
                     </div>
 
@@ -60,15 +75,21 @@
                             Vendedor responsável
                         </label>
 
-                        <select class="form-select sale-input">
+                        <select 
+                            class="form-select sale-input"
+                            name="vendedorVenda"
+                            required
+                        >
 
-                            <option></option>
+                            <option value="">
+                                Selecione
+                            </option>
 
-                            <option>
+                            <option value="João">
                                 João
                             </option>
 
-                            <option>
+                            <option value="Maria">
                                 Maria
                             </option>
 
@@ -82,15 +103,21 @@
                             Produto vendido
                         </label>
 
-                        <select class="form-select sale-input">
+                        <select 
+                            class="form-select sale-input"
+                            name="produtoVenda"
+                            required
+                        >
 
-                            <option></option>
+                            <option value="">
+                                Selecione
+                            </option>
 
-                            <option>
+                            <option value="Notebook">
                                 Notebook
                             </option>
 
-                            <option>
+                            <option value="Mouse">
                                 Mouse
                             </option>
 
@@ -104,15 +131,21 @@
                             Cliente da venda
                         </label>
 
-                        <select class="form-select sale-input">
+                        <select 
+                            class="form-select sale-input"
+                            name="clienteVenda"
+                            required
+                        >
 
-                            <option></option>
+                            <option value="">
+                                Selecione
+                            </option>
 
-                            <option>
+                            <option value="Cliente 1">
                                 Cliente 1
                             </option>
 
-                            <option>
+                            <option value="Cliente 2">
                                 Cliente 2
                             </option>
 
@@ -124,9 +157,9 @@
 
                 <div class="text-center">
 
-                    <a href="home.html" class="btn sale-btn">
+                    <button type="submit" class="btn sale-btn">
                         Cadastrar venda
-                    </a>
+                    </button>
 
                 </div>
 

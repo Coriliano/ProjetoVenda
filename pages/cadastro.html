@@ -17,7 +17,7 @@
 
 <body class="register-page">
 
-    <div class="container">
+    <div class="container register-container">
 
         <div class="top-area d-flex align-items-center">
 
@@ -33,35 +33,76 @@
 
         <div class="register-box">
 
-            <form>
+            <form action="../php/InsertUsuario.php" method="POST">
 
                 <div class="mb-4">
-                    <label class="form-label">Nome completo</label>
-                    <input type="text" class="form-control">
+
+                    <label class="form-label">
+                        Nome completo
+                    </label>
+
+                    <input 
+                        type="text" 
+                        class="form-control"
+                        name="nomeCompleto"
+                        required
+                    >
+
                 </div>
 
                 <div class="mb-4">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control">
+
+                    <label class="form-label">
+                        Email
+                    </label>
+
+                    <input 
+                        type="email" 
+                        class="form-control"
+                        name="email"
+                        required
+                    >
+
                 </div>
 
                 <div class="mb-4">
-                    <label class="form-label">Senha</label>
-                    <input type="password" class="form-control">
+
+                    <label class="form-label">
+                        Senha
+                    </label>
+
+                    <input 
+                        type="password" 
+                        class="form-control"
+                        name="senha"
+                        required
+                    >
+
                 </div>
 
                 <div class="mb-5">
-                    <label class="form-label">Confirmar senha</label>
-                    <input type="password" class="form-control">
+
+                    <label class="form-label">
+                        Confirmar senha
+                    </label>
+
+                    <input 
+                        type="password" 
+                        class="form-control"
+                        name="confirmarSenha"
+                        required
+                    >
+
                 </div>
 
-<div class="text-center">
+                <div class="text-center">
 
-    <a href="index.html" class="btn btn-register">
-        Cadastrar
-    </a>
+                    <button type="submit" class="btn btn-register">
+                        Cadastrar
+                    </button>
 
-</div>
+                </div>
+
             </form>
 
         </div>

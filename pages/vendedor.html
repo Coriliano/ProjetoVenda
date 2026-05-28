@@ -12,7 +12,7 @@
 
 <body class="seller-page">
 
-    <div class="seller-container">
+    <div class="container seller-container text-center">
 
         <h1 class="seller-title">
             Insira os dados do vendedor
@@ -20,7 +20,7 @@
 
         <div class="seller-box">
 
-            <form>
+            <form action="php/cadastrar_vendedor.php" method="POST">
 
                 <div class="mb-4">
 
@@ -28,7 +28,12 @@
                         Nome do vendedor
                     </label>
 
-                    <input type="text" class="form-control seller-input">
+                    <input 
+                        type="text" 
+                        class="form-control seller-input"
+                        name="nomeVendedor"
+                        required
+                    >
 
                 </div>
 
@@ -38,7 +43,12 @@
                         Contato do vendedor
                     </label>
 
-                    <input type="text" class="form-control seller-input">
+                    <input 
+                        type="text" 
+                        class="form-control seller-input"
+                        name="contatoVendedor"
+                        required
+                    >
 
                 </div>
 
@@ -48,15 +58,21 @@
                         Equipe do vendedor
                     </label>
 
-                    <select class="form-select seller-input">
+                    <select 
+                        class="form-select seller-input"
+                        name="equipeVendedor"
+                        required
+                    >
 
-                        <option></option>
+                        <option value="">
+                            Selecione
+                        </option>
 
-                        <option>
+                        <option value="Equipe Norte">
                             Equipe Norte
                         </option>
 
-                        <option>
+                        <option value="Equipe Sul">
                             Equipe Sul
                         </option>
 
@@ -66,9 +82,9 @@
 
                 <div class="text-center">
 
-                    <a href="home.html" class="btn seller-btn">
+                    <button type="submit" class="btn seller-btn">
                         Cadastrar vendedor
-                    </a>
+                    </button>
 
                 </div>
 
